@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Search Results
+{% endblock %}
+
+{% block content %}
+<h1>Search Results</h1>
+<div class="container row gap-3" style="height: 15rem;">
+    {% if search_results %}
+            {% for search_result in search_results %}
+                <div class="card" style="width: 18rem;">
+                <img src="{{ search_result.photo.url }}" class="card-img-top" >
+                <div class="card-body">
+                <h5 class="card-title">{{ search_result.user.username }}</h5>
+                <p class="card-text"> {{ search_result.text }} </p>
+            {% endfor %}
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
