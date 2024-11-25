@@ -28,3 +28,5 @@ Usage:
   Log in after registration.
   Create, view, edit, and delete tweets as needed.
   Use the search bar to find tweets based on keywords.
+
+Username and Passoword are given in setting.py file
