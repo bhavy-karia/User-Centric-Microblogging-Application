@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 Username & Passwords
 -------------------------
-bhavya is karia@123
-bhavyakaria is Hello@123
+admin: bhavya & karia@123
+user: bhavyakaria & Hello@123
 """
 
 from pathlib import Path
